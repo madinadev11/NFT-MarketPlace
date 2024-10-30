@@ -1,0 +1,480 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background-color: #2b2b2b;
+    font-family: "Work Sans", sans-serif;
+  }
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  a {
+    text-decoration: none;
+  }
+  #header {
+    padding: 30px 0;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  nav a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    /* line-height: 22.4px; */
+    transition: 0.7s;
+  }
+  nav a:hover {
+    color: #e359ff; 
+    transform: scale(1.1);
+  }
+  nav a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+  }
+  nav a:hover::after {
+    width: 100%; 
+  }
+  
+  .main {
+    width: 100%;
+  }
+  .menu {
+    display: none;
+    width: 10%;
+  }
+  .header-btn {
+    position: relative;
+  }
+  .header-btn button {
+    width: 170px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #ff5ae9;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+  }
+  .header-btn button:hover {
+    background-color: #ff45da;
+    box-shadow: 0 4px 15px rgba(255, 69, 230, 0.5);
+    transform: translateY(-3px);
+  }
+  .header-btn button span {
+    margin-right: 15px;
+    position: absolute;
+    left: 20px;
+    top: 22px;
+    width: 13%;
+  }
+  
+  #footer {
+    margin: 100px 0;
+  }
+  
+  .footer {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+  }
+  
+  .footer-content {
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+  }
+  .footer-content:hover {
+    transform: scale(1.05);
+  }
+  
+  .footer-content p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    color: #cccccc;
+    margin: 30px 0;
+    transition: 0.5s;
+  }
+  
+  .footer-content p:hover {
+    color: #ff45ff;
+  }
+  
+  .footer-content h1 {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 35.2px;
+    color: white;
+  }
+  
+  .footer-content h1:hover {
+    color: #7f45ff;
+    transition: 0.5s;
+  }
+  
+  hr {
+    margin-top: 50px;
+  }
+  
+  .footer-inp input {
+    width: 350px;
+    height: 60px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+  }
+  .footer-inp input:focus {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    outline: none;
+    border: none;
+  }
+  .footer-inp input::placeholder {
+    color: black;
+    margin-left: 10px;
+    color: black;
+    margin-left: 10px;
+    text-align: center;
+    padding: 10px;
+    width: 60%;
+    color: black;
+    margin-left: 20px;
+  }
+  
+
+  
+  
+  .footer-inp button {
+    margin-left: -140px;
+    width: 211px;
+    height: 60px;
+    border-radius: 20px;
+    border: none;
+    background-color: #ff59ee;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    position: relative;
+  }
+  
+  .footer-inp button:hover {
+    background-color: #ff45e0;
+    box-shadow: 0 4px 15px rgba(127, 69, 255, 0.5);
+  }
+  
+  .footer-inp button span img {
+    position: absolute;
+    left: 40px;
+  }
+  
+  .footer-socials img {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+   
+ .sign-up {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .sign-up-right h1 {
+    font-size: 51px;
+    font-weight: 600;
+    color: white;
+  } 
+  .sign-up-right p {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 35.2px;
+    margin: 0px 0;
+    color: white;
+  } 
+  .sign-up-right input {
+    width: 330px;
+    height: 46px;
+    gap: 12px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 20px;
+  } 
+   .sign-up-right input::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+    padding-left: 30px;
+  }
+   
+   .sign-up-right button {
+    width: 330px;
+    height: 46px;
+    gap: 12px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 20px;
+    background: #ff59d3;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.3s ease;
+  } 
+   .sign-up-right button:hover {
+    background-position: right center;
+     transform: translateY(-3px); 
+     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); 
+  } 
+   .sign-up-right button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    background: linear-gradient(
+      120deg,
+      transparent,
+      rgba(255, 255, 255, 0.2),
+      transparent
+    ); 
+     transition: left 0.5s ease;
+     pointer-events: none; 
+  }
+  .sign-up-right button:hover::before {
+    left: 100%;
+  }
+   
+   .sign-input {
+    position: relative;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .sign-input input {
+    box-sizing: border-box;
+    border: 1px solid #cccccc;
+  }
+  .sign-input input:focus {
+    outline: none;
+    border: none;
+    border-color: #333;
+  }
+  .sign-input input::placeholder {
+    font-size: 15px;
+    transition: opacity 0.3s ease;
+  }
+  .sign-input input:focus::placeholder {
+    color: white;
+    opacity: 0;
+  }
+  .sign-input ion-icon {
+    position: absolute;
+    top: 60%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #aaa;
+    transition: opacity 0.3s ease;
+  }
+  .sign-input input:focus ~ ion-icon {
+    color: white;
+    opacity: 0;
+  }
+  .sign-input input:hover {
+    background: rgb(205, 63, 188);
+    border-color: transparent;
+    color: white;
+  }
+  .sign-input input:hover::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+    color: black;
+
+  }
+    .sign-input input:not(:placeholder-shown) ~ ion-icon {
+    opacity: 0;
+  }
+  .sign-input input:placeholder-shown ~ ion-icon {
+    opacity: 1;
+  } 
+   
+  @media (max-width: 1280px) {
+    .art-back {
+      width: 471px;
+    }
+    .art-blocks {
+      gap: 151px;
+    }
+    .art-left p {
+      font-size: 26px;
+    }
+    .creator-card {
+      width: 255px;
+    }
+    .how-blocks {
+      gap: 28px;
+    }
+    .how-block p {
+      font-size: 18px;
+    }
+    .join-inp button {
+      margin-left: -97px;
+    }
+    #join {
+      padding: 27px;
+    }
+  }
+  
+  @media (max-width: 834px) {
+    .header-btn button {
+      width: 107px;
+      height: 33px;
+      font-size: 12px;
+    }
+    .head-icon {
+      width: 13%;
+      left: 15px;
+      top: 8px;
+    }
+    nav {
+      display: none;
+    }
+    .menu {
+      display: block;
+      width: 5%;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    .menu:hover {
+       transform: rotate(90deg);  
+    }
+    #footer {
+      margin: 4px 0;
+    }
+    .footer {
+      display: flex;
+      flex-direction: column;
+    }
+    .footer-content h1 {
+      margin-top: 30px;
+    }
+    .sign-up img {
+      width: 367px;
+      height: 615px;
+    }
+    .sign-up-right h1 {
+      font-size: 36px;
+    }
+    .sign-up-right p {
+      font-size: 18px;
+      margin: 7px 0;
+    }
+    .sign-up-right input {
+      width: 330px;
+      height: 46px;
+      gap: 12px;
+      margin-top: -2px;
+    }
+    .sign-up-right button {
+      gap: 12px;
+      margin-top: 2px;
+    }
+    .sign-input ion-icon {
+      top: 44%;
+      left: 10px;
+    }
+  }
+  
+  @media (max-width: 375px) {
+    .menu {
+      margin-left: 89px;
+      display: block;
+      width: 5%;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    .menu:hover {
+      transform: rotate(90deg);
+    }
+    #footer {
+      margin: 30px 0;
+    }
+    .footer-inp button {
+      margin-left: 0px;
+      margin-top: 30px;
+      width: 336px;
+      height: 49px;
+    }
+    .footer-inp input {
+      width: 335px;
+      height: 51px;
+    }
+    .main {
+      width: 47%;
+    }
+    hr {
+      margin-top: 31px;
+    }
+    .footer-inp button span img {
+      left: 103px;
+    }
+    .footer-content h1 {
+      margin-top: 6px;
+      font-size: 27px;
+    }
+    .footer-content p {
+      margin: 17px 0;
+    }
+    .sign-up {
+      flex-direction: column;
+      text-align: center;
+    }
+    .sign-up img {
+      width: 100%;
+      height: 387px;
+    }
+    .sign-up-right p {
+      font-size: 18px;
+      margin: 25px 0;
+    }
+  }
+  @media (max-width: 320px) {
+    .footer-inp input {
+        width: 85%; 
+        height: 45px; 
+    }
+    .footer-inp button {
+        width: 85%; 
+        height: 45px; 
+        margin-top: 15px; 
+    }
+    .sign-up img {
+        width: 100%; 
+        height: auto; 
+    }
+    .sign-up-right p {
+        font-size: 14px; 
+        margin: 20px 0; 
+    }
+    .sign-up-right input {
+        width: 85%;
+        height: 45px; 
+    }
+    .sign-up-right button {
+        width: 85%; 
+    }
+}
